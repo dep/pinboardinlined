@@ -1,11 +1,25 @@
 .bookmark .thumb,
+.video_iframe,
+.bookmark object,
+.inlined_info {
+    margin-top:20px;
+}
+
+.bookmark .thumb,
 .video_iframe {
     width:560px;
     height:315px;
-    margin-top:20px;
 }
 .inline_image {
     min-width:590px;
     max-width:590px;
-    margin-top:20px;
+}
+.inlined_info {
+    padding:10px;
+    border:1px dotted #ccc;
+    background:#fafafa;
+    overflow:hidden;
+}
+.inlined_info .movie_thumb {
+    margin:0 10px 10px 0;
 }

@@ -1,12 +1,13 @@
 {
 		"name": "Pinboard Inlined",
-		"version": "1.1.0",
+		"version": "1.2.0",
 		"manifest_version": 2,
 		"description": "Enables 'inline' media for your Pinboard.in Feed",
 		"icons": { "64": "icon-128.png", "48": "icon-48.png", "32": "icon-32.png" },
 		"permissions": [
 				"tabs",
-				"http://pinboard.in/*", "https://pinboard.in/*"
+				"http://pinboard.in/*", "https://pinboard.in/*",
+                "http://*/", "https://*/"
 		],
 		"content_scripts": [
 				{
@@ -14,7 +15,7 @@
 								"http://pinboard.in/*", "https://pinboard.in/*"
 						],
 						"css": ["styles.css"],
-						"js": ["jquery.js", "soundcloud.js", "start.js"]
+						"js": ["jquery.js", "soundcloud.js", "vimeo.js", "start.js"]
 				}
 		],
         "web_accessible_resources": ["jquery.js"]
