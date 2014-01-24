@@ -1,12 +1,14 @@
 {
 		"name": "Pinboard Inlined",
-		"version": "1.2.4",
+		"version": "1.2.5",
 		"manifest_version": 2,
 		"description": "Enables 'inline' media for your Pinboard.in Feed",
 		"icons": { "64": "icon-128.png", "48": "icon-48.png", "32": "icon-32.png" },
 		"permissions": [
 				"tabs",
-				"http://pinboard.in/*", "https://pinboard.in/*"
+				"http://pinboard.in/*", "https://pinboard.in/*",
+				"https://en.wikipedia.org/*",
+				"http://api.rottentomatoes.com/*"
 		],
 		"content_scripts": [
 				{
