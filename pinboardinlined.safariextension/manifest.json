@@ -6,8 +6,7 @@
 		"icons": { "64": "icon-128.png", "48": "icon-48.png", "32": "icon-32.png" },
 		"permissions": [
 				"tabs",
-				"http://pinboard.in/*", "https://pinboard.in/*",
-                "http://*/", "https://*/"
+				"http://pinboard.in/*", "https://pinboard.in/*"
 		],
 		"content_scripts": [
 				{
