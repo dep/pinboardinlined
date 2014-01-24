@@ -28,7 +28,8 @@ function make_inlines() {
             bookmark.append('<a class="embedly-card" href="' + url +'">' + link.html() + '</a>');*/
         } else if (url.match("imgur.com")) {
             embedly = true;
-            bookmark.append('<a class="embedly-card" href="' + url +'">' + link.html() + '</a>');
+            url = url.split("://")[1];
+            bookmark.append('<a class="embedly-card" href="https://' + url +'">imgur</a>');
         } else if (url.match("vimeo.com")) {
             if (!url.match(/groups/)) {
                 if (url.match(/\player\.vimeo/)) {
