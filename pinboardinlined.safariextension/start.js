@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).ready(function() {
     // For soundcloud API
     SC.initialize({
         client_id: "17ed55515f71bb2be55e49cc89e2d5aa"
@@ -26,7 +26,7 @@ function make_inlines() {
         /*} else if (url.match("amazon.com") || url.match("mashable.com") || url.match("techcrunch.com") || url.match("pinterest.com")) {
             embedly = true;
             bookmark.append('<a class="embedly-card" href="' + url +'">' + link.html() + '</a>');*/
-        } else if (url.match("imgur.com/gallery")) {
+        } else if (url.match("imgur.com")) {
             embedly = true;
             bookmark.append('<a class="embedly-card" href="' + url +'">' + link.html() + '</a>');
         } else if (url.match("vimeo.com")) {

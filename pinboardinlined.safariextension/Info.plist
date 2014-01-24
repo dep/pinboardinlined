@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2.0</string>
+	<string>1.2.1</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>Chrome</key>
@@ -25,13 +25,18 @@
 			<key>Start</key>
 			<array>
 				<string>jquery.js</string>
-				<string>player.js</string>
+				<string>soundcloud.js</string>
 				<string>start.js</string>
 			</array>
 		</dict>
 		<key>Stylesheets</key>
 		<array>
 			<string>styles.css</string>
+		</array>
+		<key>Whitelist</key>
+		<array>
+			<string>http://api.rottentomatoes.com/*</string>
+			<string>https://en.wikipedia.org/*</string>
 		</array>
 	</dict>
 	<key>Description</key>
@@ -45,6 +50,8 @@
 			<key>Allowed Domains</key>
 			<array>
 				<string>pinboard.in</string>
+				<string>rottentomatoes</string>
+				<string>wikipedia</string>
 			</array>
 			<key>Include Secure Pages</key>
 			<true/>
