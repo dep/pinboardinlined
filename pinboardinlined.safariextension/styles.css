@@ -1,14 +1,15 @@
 .bookmark .thumb,
 .video_iframe,
 .bookmark object,
+.inline_image,
 .inlined_info {
     margin-top:20px;
 }
 
 .bookmark .thumb,
 .video_iframe {
-    width:560px;
-    height:315px;
+    width:560px !important;
+    height:315px !important;
 }
 .inline_image {
     min-width:590px;
