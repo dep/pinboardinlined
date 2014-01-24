@@ -15,7 +15,7 @@
 								"http://pinboard.in/*", "https://pinboard.in/*"
 						],
 						"css": ["styles.css"],
-						"js": ["jquery.js", "soundcloud.js", "vimeo.js", "start.js"]
+						"js": ["jquery.js", "soundcloud.js", "start.js"]
 				}
 		],
         "web_accessible_resources": ["jquery.js"]
