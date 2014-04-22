@@ -20,7 +20,7 @@ function make_inlines() {
             } else if (data.description) {
                 var insides = "";
                 if (data.thumbnail_url) {
-                    insides += '<img src="' + data.thumbnail_url + '" class="thumbnail" align="left">';
+                    insides += '<img src="' + data.thumbnail_url + '" class="thumbnail" align="right">';
                 }
                 insides += "<span class='via'>via <strong>" + data.provider_name.toLowerCase() + "</strong></span><br>";
                 insides += data.description;
