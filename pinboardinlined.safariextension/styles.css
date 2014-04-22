@@ -1,9 +1,8 @@
 .bookmark .thumb,
 .video_iframe,
 .bookmark object,
-.inline_image,
-.inlined_info {
-    margin-top:20px;
+.inline_image {
+    margin-top:15px;
 }
 .bookmark_parent {
     position:relative;
@@ -12,8 +11,8 @@
 .bookmark .thumb,
 iframe, embed,
 .video_iframe {
-    width:580px !important;
-    height:325px !important;
+    width:540px !important;
+    height:305px !important;
 }
 .inline_image {
     min-width:590px;
@@ -21,12 +20,24 @@ iframe, embed,
 }
 .inlined_info {
     padding:10px;
-    border:1px dotted #ccc;
+    margin:15px 20px 20px;
+    margin-bottom:20px;
+    border-radius:5px;
+    box-shadow:0px 1px 10px #ccc;
     background:#fafafa;
+    font-size:14px;
+    line-height:22px;
     overflow:hidden;
 }
-.inlined_info .movie_thumb {
-    margin:0 10px 10px 0;
+.inlined_info .via {
+    font-size:20px;
+    color:#666;
+}
+.inlined_info .thumbnail {
+    width:25%!important;
+    height:25%!important;
+    float:right;
+    margin:0 0 0 20px;
 }
 .inlined_info img {
     display:block;

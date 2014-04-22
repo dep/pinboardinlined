@@ -17,6 +17,14 @@ function make_inlines() {
         data.done(function(data) {
             if (data.html) {
                 bookmark.append('<div class="inlined_info">' + data.html + '</div>');
+            } else if (data.description) {
+                var insides = "";
+                if (data.thumbnail_url) {
+                    insides += '<img src="' + data.thumbnail_url + '" class="thumbnail" align="left">';
+                }
+                insides += "<span class='via'>via <strong>" + data.provider_name.toLowerCase() + "</strong></span><br>";
+                insides += data.description;
+                bookmark.append('<div class="inlined_info">' + insides + '</div>');
             } else {
                 fallback(url, bookmark, link);
             }

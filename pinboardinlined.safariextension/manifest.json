@@ -1,6 +1,6 @@
 {
 		"name": "Pinboard Inlined",
-		"version": "1.3.0",
+		"version": "1.3.1",
 		"manifest_version": 2,
 		"description": "Enables 'inline' media for your Pinboard.in Feed",
 		"icons": { "64": "icon-128.png", "48": "icon-48.png", "32": "icon-32.png" },
