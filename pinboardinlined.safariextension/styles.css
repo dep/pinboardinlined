@@ -5,11 +5,15 @@
 .inlined_info {
     margin-top:20px;
 }
+.bookmark_parent {
+    position:relative;
+}
 
 .bookmark .thumb,
+iframe, embed,
 .video_iframe {
-    width:560px !important;
-    height:315px !important;
+    width:580px !important;
+    height:325px !important;
 }
 .inline_image {
     min-width:590px;
@@ -23,4 +27,9 @@
 }
 .inlined_info .movie_thumb {
     margin:0 10px 10px 0;
+}
+.inlined_info img {
+    display:block;
+    width:100% !important;
+    height:auto !important;
 }
