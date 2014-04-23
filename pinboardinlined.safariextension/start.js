@@ -14,6 +14,8 @@ function make_inlines() {
         var bookmark = $(this).parents(".bookmark");
         var url = link.attr("href");
         var data = $.getJSON("https://api.embed.ly/1/oembed?key=1a99a68736604cadb781e68c5cff23c5&url=" + encodeURIComponent(url));
+        bookmark.addClass('loading');
+        bookmark.append('<div class="loading-cir"></div>');
         data.done(function(data) {
             if (data.html) {
                 bookmark.append('<div class="inlined_info">' + data.html + '</div>');
@@ -28,6 +30,7 @@ function make_inlines() {
             } else {
                 fallback(url, bookmark, link);
             }
+            bookmark.removeClass('loading');
         });
         data.error(function() {
             fallback(url, bookmark, link);
@@ -111,6 +114,8 @@ function fallback(url, bookmark, link) {
     if (youtube) {
         do_youtubes();
     }
+
+    bookmark.removeClass('loading');
 }
 
 // Grab url param
