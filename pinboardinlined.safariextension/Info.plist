@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Danny Peck</string>
 	<key>Builder Version</key>
-	<string>9537.73.11</string>
+	<string>9537.75.14</string>
 	<key>CFBundleDisplayName</key>
 	<string>Pinboard Inlined</string>
 	<key>CFBundleIdentifier</key>
@@ -45,8 +45,8 @@
 			<key>Allowed Domains</key>
 			<array>
 				<string>pinboard.in</string>
-                <string>en.wikipedia.org</string>
-                <string>api.rottentomatoes.com</string>
+				<string>en.wikipedia.org</string>
+				<string>api.rottentomatoes.com</string>
 			</array>
 			<key>Include Secure Pages</key>
 			<true/>
