@@ -28,6 +28,7 @@ iframe, embed,
     font-size:14px;
     line-height:22px;
     overflow:hidden;
+    clear:both;
 }
 .inlined_info .via {
     font-size:20px;
